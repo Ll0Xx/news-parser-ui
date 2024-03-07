@@ -42,6 +42,18 @@ dependencies {
     implementation('net.synedra:validatorfx:0.4.0') {
         exclude(group: 'org.openjfx')
     }
+    // Jersey core dependencies
+    implementation 'org.glassfish.jersey.core:jersey-client:2.35'
+    implementation 'org.glassfish.jersey.inject:jersey-hk2:2.35'
+    implementation 'org.glassfish.jersey.media:jersey-media-json-jackson:2.35'
+
+    // jakarta dependencies
+    implementation 'jakarta.ws.rs:jakarta.ws.rs-api:2.1.2'
+    implementation('jakarta.activation:jakarta.activation-api:2.1.2')
+
+    // jackson
+    implementation('com.fasterxml.jackson.core:jackson-databind:2.16.1')
+    implementation('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
     implementation('org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0')
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")

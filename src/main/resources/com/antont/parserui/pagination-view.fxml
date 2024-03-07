@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="474.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.antont.parserui.controller.NewsController">
+    <center>
+        <ListView fx:id="newsListView" prefHeight="334.0" prefWidth="409.0" BorderPane.alignment="CENTER" />
+    </center>
+    <bottom>
+        <Pagination fx:id="pagination" prefHeight="46.0" prefWidth="420.0" BorderPane.alignment="CENTER" />
+    </bottom>
+    <top>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <ChoiceBox fx:id="timeChoiceBox" prefWidth="150.0">
+                    <padding>
+                        <Insets left="8.0" right="8.0" />
+                    </padding>
+                </ChoiceBox>
+            </buttons>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets left="8.0" right="8.0" />
+            </padding>
+        </ButtonBar>
+    </top>
+</BorderPane>
